@@ -18,5 +18,6 @@ public class ConfigCoreApiErpTarefas extends ConfiguradorCoreDeProjetoJarAbstrat
 
     @Override
     public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+
     }
 }
