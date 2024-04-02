@@ -22,6 +22,8 @@ public class JsonBindDTOERPTarefa
         JsonNode node = codec.readTree(jp);
         DTOERPTarefa dto = new DTOERPTarefa();
         adicionarPropriedadeInteiro("id", node, "id");
+        adicionarPropriedadeString("idAppRemoto", node, "id");
+        adicionarPropriedadeString("nome", node, "name");
         selarProcesamento(dto);
         return dto;
     }
