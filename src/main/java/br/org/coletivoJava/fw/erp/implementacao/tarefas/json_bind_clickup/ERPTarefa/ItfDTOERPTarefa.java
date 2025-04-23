@@ -9,23 +9,23 @@ import java.lang.String;
 @JsonDeserialize(using = JsonBindDTOERPTarefa.class)
 public interface ItfDTOERPTarefa extends ItfDTOSBJSON, ItfERPTarefa {
 
-	@Override
-	public default String getNome() {
-		return (String) getValorPorReflexao();
-	}
+    @Override
+    public default String getNome() {
+        return (String) getValorPorReflexao();
+    }
 
-	@Override
-	public default String getNomeCurto() {
-		return (String) getValorPorReflexao();
-	}
+    @Override
+    public default String getNomeCurto() {
+        return (String) getValorPorReflexao();
+    }
 
-	@Override
-	public default String getIconeDaClasse() {
-		return (String) getValorPorReflexao();
-	}
+    @Override
+    public default String getIconeDaClasse() {
+        return (String) getValorPorReflexao();
+    }
 
-	@Override
-	public default int getId() {
-		return (int) getValorPorReflexao();
-	}
+    @Override
+    public default Long getId() {
+        return (long) getValorPorReflexao();
+    }
 }
